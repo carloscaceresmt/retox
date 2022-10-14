@@ -24,5 +24,4 @@ public class Client {
     @OneToMany(cascade = {CascadeType.PERSIST},mappedBy = "client")
     @JsonIgnoreProperties("client")
     private List<Message> messages;
-
 }
